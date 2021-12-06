@@ -29,6 +29,7 @@ p.badge {
   padding: calc(var(--spacing-xxsmall) + 1px) var(--spacing-small) var(--spacing-xxsmall) var(--spacing-small);
   width: auto !important;
   font-family: var(--font-mono-semibold);
+  letter-spacing: var(--letter-space-tiny);
 }
 
 p.badge:last-of-type {

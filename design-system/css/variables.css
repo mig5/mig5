@@ -24,6 +24,8 @@
   --font-size-4: 1.5rem;
   --line-height-4: 2rem;
 
+  --letter-space-tiny: .025rem;
+
   --font-color-dark: rgba(51,51,51,1);
   --font-color-light: #FAFAFA;
   --font-label-lm: #666;
