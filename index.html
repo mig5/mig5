@@ -1,0 +1,171 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Art Vandelay">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>🟢 mig5 - System Administration as a Service</title>
+
+	<link rel="stylesheet" href="design-system/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="design-system/js/jquery-min.js"></script>
+	<script src="design-system/components/tabs/js/tabs.js"></script>
+	<script src="design-system/components/header/js/header.js"></script>
+	<script src="design-system/components/hint/js/hint.js"></script>
+	<script src="design-system/components/footer/js/footer.js"></script>
+</head>
+
+<body>
+
+	<!-- HEADER -->
+
+	<header>
+		<div class="wrapper">
+			<div class="logoMark emptyLogo"></div>
+			<h1 class="logo"><a href="">mig5</a></h1>
+			<nav>
+				<a role="button" class="navButton" tabindex="0">
+					<div class="menu"></div>
+				</a>
+				<ul>
+					<li>
+						<p class="badge"><span class="indicator">🟢</span>&nbsp;Accepting new clients</p>
+					</li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><button type="button" class="btn primaryBtn" href="#contact">Contact</button></li>
+				</ul>
+			</nav>
+			<nav class="staged">
+				<a role="button" class="navButton closeButton" tabindex="0">
+					<div class="close"></div>
+				</a>
+				<ul>
+					<li>
+						<p class="badge"><span class="indicator">🟢</span>&nbsp;Accepting new clients</p>
+					</li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><button type="button" class="btn primaryBtn" href="#contact">Contact</button></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- INTRO -->
+
+	<section class="intro">
+		<div class="wrapper">
+			<h1>root@mig5:~# System administration as a service<span class="cursor">▌</span></h1>
+		</div>
+		<p class="hint">Scroll Down</p>
+	</section>
+
+	<section id="services" class="content cards centeredContent contentRow tertiaryContent wrapper">
+		<h2>Services</h2>
+			<div id="enterprise" class="contentRowContent">
+				<div class="contentItem blockContent">
+					<div class="description">
+						<p class="emoji">⚙</p>
+						<h3>Configuration Management</h3>
+						<p>Bootstrapping, automating and maintaining your infrastructure with tools such as Puppet, or Ansible, keeps all your systems running in a declared, expected state. This helps enforce disciplined change management, creates an audit trail and also improves disaster recovery processes.</p>
+					</div>
+				</div>
+				<div class="contentItem blockContent">
+					<div class="description">
+						<p class="emoji">🚦</p>
+						<h3>Infrastructure Management</h3>
+						<p>Tools such as Terraform allow mig5 to bring the same concepts of configuration management into the provisioning, lifecycle and disaster recovery of your infrastructure or cloud services. Due to Terraform's abstraction of various cloud APIs, there's a good chance your hosting provider is supported.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contentRowContent">
+				<div class="contentItem blockContent">
+					<div class="description">
+						<p class="emoji">🚀</p>
+						<h3>Continuous Deployment</h3>
+						<p>mig5 specialises in building zero-touch deployment tools that will automatically deploy your application from version control to your hosting platform, and also roll back changes if the deployment goes bad. Take the pain out of your delivery workflow and you'll find developers will release earlier and more often, which actually ends up decreasing the chance of regressions.</p>
+					</div>
+				</div>
+				<div class="contentItem blockContent">
+					<div class="description">
+						<p class="emoji">🔐</p>
+						<h3>Security Hardening</h3>
+						<p>mig5 has years of experience hardening servers, implementing intrusion detection systems and improving the security posture and compliance obligations of various organisations.</p>
+						<p>mig5 has been an active contributor or sysadmin for many high profile security projects such as OnionShare and others in the Tor ecosystem.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contentRowContent">
+				<div class="contentItem blockContent">
+					<div class="description">
+						<p class="emoji">🚨</p>
+						<h3>High Availability and Disaster Recovery</h3>
+						<p>mig5 has many years of experience designing and implementing high availability infrastructure to dynamically scale horizontally under load, or for resiliency in the face of unplanned outages.</p>
+						<p>This includes effective loadbalancing design, autoscaling clusters, service replication (including multi-master MySQL replication) and seamless automated failover.</p>
+						<p>mig5 specialises in building auto-scale clusters that can grow and shrink as your application demands.</p>
+					</div>
+				</div>
+				<div class="contentItem blockContent">
+					<div class="description">
+						<p class="emoji">✍️</p>
+						<h3>Technical communication</h3>
+						<p>Communication is a niche skill mig5 can provide - something other sysop organisations lack or are too 'cookie cutter' focused to offer.</p>
+						<p>mig5 specialises in helping you write effective and persuasive RFPs, setting your organisation apart from rival businesses.</p>
+						<p>Let mig5 help you document ISMS and ISO27001-compliant internal processes to set your business on the path to a more secure and compliant future.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contentRowContent">
+				<div class="contentItem blockContent">
+					<div class="description">
+						<p class="emoji">🐧</p>
+						<h3>Specific Linux Server Tasks, Troubleshooting, Decision-Making</h3>
+						<p>Bash, Python, PHP, Perl, DNS, Postfix, Dovecot, Postgres/MySQL database administration, Varnish, Squid, Memcached, HAProxy, iptables, Nagios, Munin, even BGP network administration... mig5 draws from over a decade of experience solving specific challenges that you may be facing, using a wide range of open source tools - too many to mention here.</p>
+						<p>Some customers simply hire mig5 for 'advice' when they need it.</p>
+						<p>Get in touch and ask whether mig5 sysadmins can help you achieve your goals.</p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+		</div>
+	</section>
+
+	<!-- CONTACT -->
+
+	<section class="content minimalContent wrapper">
+		<h2 id="contact">Contact</h2>
+		<div class="contentItem noImage">
+			<div class="description">
+				<p>💼&nbsp;&nbsp;<a href="https://www.linkedin.com/in/mig5/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+				<p>💻&nbsp;&nbsp;<a href="https://github.com/mig5" target="_blank" rel="noopener noreferrer">Github</a></p>
+				<p>🐦&nbsp;&nbsp;<a href="https://twitter.com/_mig5" target="_blank" rel="noopener noreferrer">Twitter</a></p>
+				<p>🔑&nbsp;&nbsp;<a href="https://keybase.io/mig5" target="_blank" rel="noopener noreferrer">Keybase</a></p>
+				<p>📧&nbsp;&nbsp;<a href="mailto:mig@mig5.net?subject=Let&lsquo;s%20Work%20Together!">Email</a></p>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+
+	<footer>
+		<div class="wrapper">
+			<p>First login: 2007 | ABN 53 249 567 381 | <a href="https://mig5.net/static/mig5.asc" target="_blank">GPG key</a> | <a href="http://yvhz3ofkv7gwf5hpzqvhonpr3gbax2cc7dee3xcnt7dmtlx2gu7vyvid.onion/">.onion</a> <a href="https://mig5.net/static/onion.txt" target="
+				">proof</a> | <a href="https://old.mig5.net/blog.html">Old articles</a></p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

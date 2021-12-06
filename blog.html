@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Art Vandelay">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>🟢 mig5 - System Administration as a Service</title>
+
+	<link rel="stylesheet" href="design-system/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="design-system/js/jquery-min.js"></script>
+	<script src="design-system/components/tabs/js/tabs.js"></script>
+	<script src="design-system/components/header/js/header.js"></script>
+	<script src="design-system/components/hint/js/hint.js"></script>
+	<script src="design-system/components/footer/js/footer.js"></script>
+</head>
+
+<body>
+
+	<!-- HEADER -->
+
+	<header>
+		<div class="wrapper">
+			<div class="logoMark emptyLogo"></div>
+			<h1 class="logo"><a href="">mig5</a></h1>
+			<nav>
+				<a role="button" class="navButton" tabindex="0">
+					<div class="menu"></div>
+				</a>
+				<ul>
+					<li>
+						<p class="badge"><span class="indicator">🟢</span>&nbsp;Accepting new clients</p>
+					</li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><button type="button" class="btn primaryBtn" href="#contact">Contact</button></li>
+				</ul>
+			</nav>
+			<nav class="staged">
+				<a role="button" class="navButton closeButton" tabindex="0">
+					<div class="close"></div>
+				</a>
+				<ul>
+					<li>
+						<p class="badge"><span class="indicator">🟢</span>&nbsp;Accepting new clients</p>
+					</li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><button type="button" class="btn primaryBtn" href="#contact">Contact</button></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- INTRO -->
+
+	<section class="intro secondaryIntro">
+		<div class="wrapper">
+			<h1>Blog</h1>
+			<p>Available as an <a href="">Atom feed</a>.</p>
+		</div>
+	</section>
+
+	<section class="content cards minimalContent wrapper">
+		<h2>Recent Articles</h2>
+				<div class="contentItem metadataItem noImage">
+					<div class="description">
+						<!-- <p class="emoji">⚙</p> -->
+						<h3><a href="#">Ignoring 'allowed' ports in Amazon Inspector findings, with Lambda and SNS</a></h3>
+						<p class="meta">2020-07-23</p>
+						<p>If you don't know about Amazon Inspector, it's a managed AWS service which can scan your EC2 instances for vulnerabilities, and Security Groups for open ports accessible from the internet.</p>
+					</div>
+				</div>
+				<div class="contentItem metadataItem noImage">
+					<div class="description">
+						<!-- <p class="emoji">⚙</p> -->
+						<h3><a href="#">OpenVPN 2.4 rejects client connections when "CRL has expired"</a></h3>
+						<p class="meta">2020-06-22</p>
+						<p>Had a surprise on the weekend when a customer's OpenVPN server suddenly started rejecting connections from clients (or refreshing clients that were already connected), which set off a flurry of Nagios alerts.</p>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- CONTACT -->
+
+	<section class="content minimalContent wrapper">
+		<h2 id="contact">Contact</h2>
+		<div class="contentItem noImage">
+			<div class="description">
+				<p>💼&nbsp;&nbsp;<a href="https://www.linkedin.com/in/mig5/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+				<p>💻&nbsp;&nbsp;<a href="https://github.com/mig5" target="_blank" rel="noopener noreferrer">Github</a></p>
+				<p>🐦&nbsp;&nbsp;<a href="https://twitter.com/_mig5" target="_blank" rel="noopener noreferrer">Twitter</a></p>
+				<p>🔑&nbsp;&nbsp;<a href="https://keybase.io/mig5" target="_blank" rel="noopener noreferrer">Keybase</a></p>
+				<p>📧&nbsp;&nbsp;<a href="mailto:mig@mig5.net?subject=Let&lsquo;s%20Work%20Together!">Email</a></p>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+
+	<footer>
+		<div class="wrapper">
+			<p>First login: 2007 | ABN 53 249 567 381 | <a href="https://mig5.net/static/mig5.asc" target="_blank">GPG key</a> | <a href="http://yvhz3ofkv7gwf5hpzqvhonpr3gbax2cc7dee3xcnt7dmtlx2gu7vyvid.onion/">.onion</a> <a href="https://mig5.net/static/onion.txt" target="
+				">proof</a> | <a href="https://old.mig5.net/blog.html">Old articles</a></p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
