@@ -19,6 +19,10 @@ p.hint {
   max-width: max-content !important;
 }
 
+.hint a {
+  text-decoration: none;
+}
+
 .fade {
   opacity: 0 !important;
 }
