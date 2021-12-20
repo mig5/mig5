@@ -4,153 +4,115 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="author" content="Miguel Jacq">
+	<meta name="author" content="Glenn Sorrentino">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>🟢 mig5 - System Administration as a Service</title>
-
+	<title>mig5 - System Administration as a Service</title>
 	<link rel="stylesheet" href="design-system/css/style.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="design-system/js/jquery-min.js"></script>
-	<script src="design-system/components/header/js/header.js"></script>
-	<script src="design-system/components/hint/js/hint.js"></script>
+	<script src="design-system/js/design-system.js"></script>
 </head>
 
 <body>
-
-	<!-- HEADER -->
-
 	<header>
 		<div class="wrapper">
-			<div class="logoMark emptyLogo"></div>
-			<h1 class="logo"><a href="#">mig5</a></h1>
-			<nav>
-				<a role="button" class="navButton" tabindex="0">
-					<div class="menu"></div>
-				</a>
+			<div class="logo">
+				<div class="logoMark"></div>
+				<h1><a href="#">mig5</a></h1>
+			</div>
+			<nav class="navItems">
 				<ul>
-					<li>
-						<p class="badge"><span class="indicator">🟢</span>&nbsp;Accepting new clients</p>
-					</li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a role="button" class="btn primaryBtn" href="#contact">Contact</a></li>
+					<li><p class="badge">🟢 Accepting New Clients</p></li>
+					<li><a class="wrapper" href="#services">Services</a></li>
+					<li><a class="wrapper" href="#about">About</a></li>
+					<li><a role="button" class="btn primaryBtn btnLrg" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<nav class="staged">
-				<a role="button" class="navButton closeButton" tabindex="0">
-					<div class="close"></div>
-				</a>
-				<ul>
-					<li>
-						<p class="badge"><span class="indicator">🟢</span>&nbsp;Accepting new clients</p>
-					</li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a role="button" class="btn primaryBtn" href="#contact">Contact</a></li>
-				</ul>
+			<nav class="mobileNav">
+				<a><span class="btnIcon"></span></a>
 			</nav>
 		</div>
 	</header>
 
-	<!-- INTRO -->
-
 	<section class="intro">
 		<div class="wrapper">
-			<h1>root@mig5:~# System administration as a service<span class="cursor">▌</span></h1>
+			<h2>root@mig5:~# System administration as a service<span class="cursor">▌</span></h2>
 		</div>
 		<p class="hint"><a href="#services">Scroll Down</a></p>
 	</section>
 
-	<!-- SERVICES -->
-
-	<section id="services" class="content cards centeredContent contentRow tertiaryContent wrapper">
-		<h2>Services</h2>
-			<div class="contentRowContent">
-				<div class="contentItem blockContent">
-					<div class="description">
-						<p class="emoji">⚙️</p>
-						<h3>Configuration Management</h3>
-						<p>Automating the creation, configuration, backing up and monitoring of your platform gives you repeatability, predictability and an audit trail.</p>
-						<p>Other outcomes are a reduction in human error, time and cost of maintenance.</p>
-					</div>
+	<section id="services">
+		<div class="wrapper center">
+			<h3>Services</h3>
+			<div class="groupRow">
+				<div class="description card">
+					<h4><span class="emoji">⚙️</span>Configuration Management</h4>
+					<p>Automating the creation, configuration, backing up and monitoring of your platform gives you repeatability, predictability and an audit trail.</p>
+					<p>Other outcomes are a reduction in human error, time and cost of maintenance.</p>
 				</div>
-				<div class="contentItem blockContent">
-					<div class="description">
-						<p class="emoji">🚀</p>
-						<h3>Continuous Deployment</h3>
-						<p>Zero-touch tools can automatically ship your app from version control to your host, applying data migrations, testing and rolling back if things go wrong.</p>
-						<p>Taking the hassle and stress out of the workflow means happier developers will release earlier and more often.</p>
-					</div>
+				<div class="description card">
+					<h4><span class="emoji">🚀</span>Continuous Deployment</h4>
+					<p>Zero-touch tools can automatically ship your app from version control to your host, applying data migrations, testing and rolling back if things go wrong.</p>
+					<p>Taking the hassle and stress out of the workflow means happier developers will release earlier and more often.</p>
 				</div>
 			</div>
-			<div class="contentRowContent">
-				<div class="contentItem blockContent">
-					<div class="description">
-						<p class="emoji">🔐</p>
-						<h3>Security Hardening</h3>
-						<p>Threat modelling, server and application hardening, intrusion detection, penetration tests and opsec training can help defend platforms and improve compliance.</p>
-						<p>Infosec is a continuous process to be integrated across all aspects of your project and into the culture and mindset of your team.</p>
-					</div>
+			<div class="groupRow">
+				<div class="description card">
+					<h4><span class="emoji">🔐</span>Security Hardening</h4>
+					<p>Threat modelling, server and application hardening, intrusion detection, penetration tests and opsec training can help defend platforms and improve compliance.</p>
+					<p>Infosec is a continuous process to be integrated across all aspects of your project and into the culture and mindset of your team.</p>
 				</div>
-				<div class="contentItem blockContent">
-					<div class="description">
-						<p class="emoji">🚨</p>
-						<h3>High Availability</h3>
-						<p>Your platform could be capable of scaling dynamically to meet demand, self-heal or fail over seamlessly during outages.</p>
-						<p>mig5 can help you design a disaster recovery system and specialises in load-balancing and replication of very busy applications.</p>
-					</div>
+				<div class="description card">
+					<h4><span class="emoji">🚨</span>High Availability</h4>
+					<p>Your platform could be capable of scaling dynamically to meet demand, self-heal or fail over seamlessly during outages.</p>
+					<p>mig5 can help you design a disaster recovery system and specialises in load-balancing and replication of very busy applications.</p>
 				</div>
 			</div>
-			<div class="contentRowContent">
-				<div class="contentItem blockContent">
-					<div class="description">
-						<p class="emoji">✍️</p>
-						<h3>Communication</h3>
-						<p>mig5 can help design technical policy, an ISMS for ISO27001 compliance, or even creatively respond to RFTs with lateral solutions that set you apart from competitors.</p>
-					</div>
+			<div class="groupRow">
+				<div class="description card">
+					<h4><span class="emoji">✍️</span>Communication</h4>
+					<p>mig5 can help design technical policy, an ISMS for ISO27001 compliance, or even creatively respond to RFTs with lateral solutions that set you apart from competitors.</p>
 				</div>
-				<div class="contentItem blockContent">
-					<div class="description">
-						<p class="emoji">🐧</p>
-						<h3>Open Source & Social Justice</h3>
-						<p>Passionate about equality, privacy, and free access to information, mig5 is especially interested in how open software can help non-profits, civil liberty groups and marginalised communities be empowered to express themselves safely and with agency.</p>
-					</div>
+				<div class="description card">
+					<h4><span class="emoji">🐧</span>Open Source & Social Justice</h4>
+					<p>Passionate about equality, privacy, and free access to information, mig5 is especially interested in how open software can help non-profits, civil liberty groups and marginalised communities be empowered to express themselves safely and with agency.</p>
 				</div>
-			</div>
-	</section>
-
-	<!-- ABOUT-->
-
-  <section class="content wrapper">
-        <h2 id="about">About</h2>
-		<p>mig5 System Administration is the Melbourne-based consultancy run by Miguel Jacq (he/him), a French-Australian DevSecOps engineer with 15 years of industry experience.</p>
-		<p>mig5 works with many international businesses, non|not-for profits and community organisations to run safer, more resilient and efficient digital services.</p>
-		<p>Miguel is an active contributor to open source projects such as <a href="https://onionshare.org" target="_blank" rel="noopener noreferrer">OnionShare</a>. Outside of tech, he is a multi-award-winning writer who enjoys food, wine, literature, music, film, and language.</p>
-  </section>
-
-	<!-- CONTACT -->
-
-	<section class="content minimalContent wrapper">
-		<h2 id="contact">Contact</h2>
-		<div class="contentItem noImage">
-			<div class="description">
-				<p>💼&nbsp;&nbsp;<a href="https://www.linkedin.com/in/mig5/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-				<p>💻&nbsp;&nbsp;<a href="https://github.com/mig5" target="_blank" rel="noopener noreferrer">Github</a></p>
-				<p>🐦&nbsp;&nbsp;<a href="https://twitter.com/_mig5" target="_blank" rel="noopener noreferrer">Twitter</a></p>
-				<p>🔑&nbsp;&nbsp;<a href="https://keybase.io/mig5" target="_blank" rel="noopener noreferrer">Keybase</a></p>
-				<p>📧&nbsp;&nbsp;<a href="mailto:mig@mig5.net?subject=Let&lsquo;s%20Work%20Together!">Email</a></p>
 			</div>
 		</div>
 	</section>
 
-	<!-- FOOTER -->
+	<section id="about">
+		<div class="wrapper">
+			<h3>About</h3>
+			<div class="description">
+				<p>mig5 System Administration is the Melbourne-based consultancy run by Miguel Jacq (he/him), a French-Australian DevSecOps engineer with 15 years of industry experience.</p>
+				<p>mig5 works with many international businesses, non|not-for profits and community organisations to run safer, more resilient and efficient digital services.</p>
+				<p>Miguel is an active contributor to open source projects such as <a href="https://onionshare.org" target="_blank" rel="noopener noreferrer">OnionShare</a>. Outside of tech, he is a multi-award-winning writer who enjoys food, wine, literature, music, film, and language.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="wrapper">
+			<h3>Contact</h3>
+			<div class="description">
+				<ul>
+					<li>💼&nbsp;&nbsp;<a href="https://www.linkedin.com/in/mig5/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+					<li>💻&nbsp;&nbsp;<a href="https://github.com/mig5" target="_blank" rel="noopener noreferrer">Github</a></li>
+					<li>🐦&nbsp;&nbsp;<a href="https://twitter.com/_mig5" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+					<li>🔑&nbsp;&nbsp;<a href="https://keybase.io/mig5" target="_blank" rel="noopener noreferrer">Keybase</a></li>
+					<li>📧&nbsp;&nbsp;<a href="mailto:mig@mig5.net?subject=Let‘s%20Work%20Together!">Email</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
 	<footer>
 		<div class="wrapper">
-			<p>First login: 2007 | ABN 53 249 567 381 | <a href="/static/mig5.asc" target="_blank" rel="noopener noreferrer">GPG key</a> | <a href="http://yvhz3ofkv7gwf5hpzqvhonpr3gbax2cc7dee3xcnt7dmtlx2gu7vyvid.onion/">.onion</a> <a href="/static/onion.txt" target="_blank" rel="noopener noreferrer">(proof)</a></p>
-			<p>Designed with ❤️ by <a href="https://glennsorrentino.com" target="_blank" rel="noopener noreferrer">Glenn Sorrentino</a> using the <a href="https://glenn-sorrentino.github.io/design-system/" target="_blank" rel="noopener noreferrer">Simple Design System</a>.</p>
+			<p>Made with ❤️ by <a href="https://glennsorrentino.com" target="_blank" rel="noopener noreferrer">Glenn Sorrentino</a></p>
+			<p>First login: 2007 | ABN 53 249 567 381 | <a href="https://mig5.net/static/mig5.asc" target="_blank" rel="noopener noreferrer">GPG key</a> | <a href="http://yvhz3ofkv7gwf5hpzqvhonpr3gbax2cc7dee3xcnt7dmtlx2gu7vyvid.onion/" target="_blank" rel="noopener noreferrer">.onion</a> <a href="https://mig5.net/static/onion.txt" target="_blank" rel="noopener noreferrer">(proof)</a></p>
 		</div>
 	</footer>
 
