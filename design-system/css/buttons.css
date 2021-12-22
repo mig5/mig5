@@ -29,7 +29,7 @@
   .btn {
     border: var(--border-light);
     color: var(--color-light);
-    background-color: var(--color-dark);
+    background-color: var(--color-shade-dm);
   }
 
   .btnIcon {
@@ -57,11 +57,12 @@
   border-radius: var(--radius-soft);
   display: inline-flex !important;
   font-size: var(--font-size-small);
-  width: fit-content;
+  width: max-content;
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
   margin: var(--spacing-small) 0;
+  text-transform: capitalize;
 }
 
 .btnLrg {

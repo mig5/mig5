@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-  // INTRO HINT
-  
   var pageOffset = $('.wrapper').offset().top;
 
   $(window).on('scroll', function() {
@@ -12,14 +10,12 @@ $(document).ready(function() {
     }
   });
 
-  // HEADER
-
   $('.btnIcon').on('click', function() {
-    $('.navItems').toggleClass('open');
+    $('nav ul').toggleClass('open');
   });
 
   $('NAV li').on('click', function() {
-    $('.navItems').removeClass('open');
+    $('nav ul').removeClass('open');
   });
 
 });

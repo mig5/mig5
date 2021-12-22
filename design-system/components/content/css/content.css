@@ -1,3 +1,15 @@
+@media (prefers-color-scheme: light) {
+  .iconAlt {
+    color: var(--color-label-lm);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .iconAlt {
+    color: var(--color-label-dm);
+  }
+}
+
 .group {
   display: flex;
   margin: var(--spacing-large) 0;
@@ -26,20 +38,12 @@
   padding: 0 0 0 2rem;
 }
 
-.description h3 {
-  margin: 0;
-}
-
-.description h4 {
-  margin: 0;
-}
-
-.description h5 {
-  margin: 0;
-}
-
+.description h3,
+.description h4,
+.description h5,
 .description h6 {
   margin: 0;
+  width: 66%;
 }
 
 .description p {
@@ -48,7 +52,16 @@
 
 .description .icon {
   width: var(--size-project-icon);
+  height: var(--size-project-icon);
   margin: 0 0 var(--spacing-base) 0;
+  border-radius: var(--radius-soft);
+}
+
+.iconAlt {
+  font-weight: bold;
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  margin: 0 0 var(--spacing-base) 0 !important;
 }
 
 .center .description .icon {
@@ -65,11 +78,26 @@
 .description img.avatar {
   height: var(--size-avatar);
   width: var(--size-avatar) !important;
+  border-radius: var(--radius-round);
 }
 
 .groupRow {
   display: flex;
   flex-direction: row;
+}
+
+.group .description h3,
+.group .description h4,
+.group .description h5,
+.group .description h6 {
+  width: 100%;
+}
+
+.groupRow .description h3,
+.groupRow .description h4,
+.groupRow .description h5,
+.groupRow .description h6 {
+  width: 100%;
 }
 
 .groupRow .description:first-of-type {
@@ -83,6 +111,16 @@
 .groupRow .description {
     padding: 0 var(--spacing-base);
     justify-content: flex-start;
+    flex: 1 1 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .description h3,
+  .description h4,
+  .description h5,
+  .description h6 {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -118,6 +156,14 @@
 
   .groupRow .description {
     padding: 0;
+  }
+
+  .description h3,
+  .description h4,
+  .description h5,
+  .description h6 {
+    margin: 0;
+    width: 100%;
   }
 
   .groupRow .description:first-of-type {

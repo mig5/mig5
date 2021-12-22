@@ -113,11 +113,14 @@ nav .badge {
 }
 
 @media only screen and (max-width: 768px) {
-
   @media (prefers-color-scheme: light) {
     nav ul {
       box-shadow: var(--shadow-lm);
       background-color: var(--color-light);
+    }
+
+    nav ul li a:hover {
+      box-shadow: inset 3px 0 var(--color-dark);
     }
   }
 
@@ -126,15 +129,19 @@ nav .badge {
       box-shadow: var(--shadow-dm);
       background-color: var(--color-dark);
     }
+
+    nav ul li a:hover {
+      box-shadow: inset 3px 0 var(--color-light);
+    }
   }
 
-  .navItems {
+  nav ul {
     display: none;
   }
 
   .mobileNav {
     display: flex;
-    align-items: center;
+    align-self: center;
   }
 
   nav ul {
@@ -159,10 +166,6 @@ nav .badge {
     padding-right: var(--spacing-medium) !important;
   }
 
-  nav ul li a:hover {
-    box-shadow: inset 3px 0 black;
-  }
-
   nav .btn {
     margin: var(--spacing-base) var(--spacing-medium);
     display: inline-flex !important;
@@ -176,5 +179,4 @@ nav .badge {
     margin-right: 0;
     margin-left: var(--spacing-medium);
   }
-
 }

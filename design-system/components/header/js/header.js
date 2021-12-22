@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
   $('.btnIcon').on('click', function() {
-    $('.navItems').toggleClass('open');
+    $('nav ul').toggleClass('open');
   });
 
   $('NAV li').on('click', function() {
-    $('.navItems').removeClass('open');
+    $('nav ul').removeClass('open');
   });
 
 });
